@@ -1,9 +1,10 @@
 package com.stymaw.quizapp.controller;
 
 
-import com.stymaw.quizapp.Question;
+import com.stymaw.quizapp.model.Question;
 import com.stymaw.quizapp.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -31,10 +32,10 @@ public class QuestionController {
 
 
     @PostMapping("add")
-    public Question addQuestion(@RequestBody Question question) {
+    public ResponseEntity<Question> addQuestion(@RequestBody Question question) {
         return questionService.addQuestion(question);
-//        return "Question Added Successfully";
     }
+
 
 
 }

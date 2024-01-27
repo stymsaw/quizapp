@@ -1,4 +1,4 @@
-package com.stymaw.quizapp;
+package com.stymaw.quizapp.model;
 
 
 import jakarta.persistence.Entity;

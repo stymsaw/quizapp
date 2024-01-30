@@ -30,6 +30,6 @@ public class QuizService {
         quiz.setQuestions(questions);
         quizDao.save(quiz);
 
-        return new ResponseEntity<>("Quiz Created Successfully", HttpStatus.CREATED);
+        return new ResponseEntity<>("Quiz Created ", HttpStatus.CREATED);
     }
 }
